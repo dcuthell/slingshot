@@ -1,0 +1,16 @@
+.Contact {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FCD819;
+  overflow: auto;
+  height: 100%;
+  font-family: 'Oswald';
+}
+
+.Contact a {
+  color: #FCD819;
+}
+
+.Contact a:hover {
+  text-decoration: none;
+	color: white;
+}

@@ -1,0 +1,10 @@
+.Menu {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FCD819;
+  height: 100%;
+  overflow: auto;
+}
+
+.Menu h1{
+  font-family: 'Damion';
+}

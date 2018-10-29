@@ -1,0 +1,16 @@
+.Home {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FCD819;
+  height: 100%;
+  overflow: auto;
+}
+
+.Home h1 {
+  font-family: 'Damion';
+}
+.Home h3 {
+  font-family: 'Oswald';
+}
+.Home h4 {
+  font-family: 'Montserrat';
+}
