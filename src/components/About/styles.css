@@ -1,6 +1,6 @@
 .About {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #FCD819;
+  background-color: inherit;
+  color: inherit;
   height: 100%;
   overflow: auto;
   font-family: 'Yesteryear';

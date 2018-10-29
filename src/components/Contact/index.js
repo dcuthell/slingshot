@@ -25,7 +25,7 @@ class Contact extends Component {
         </Row>
         <Row>
           <Col>
-            <a href="mailto:info@slingshotloungepdx.com"><h1>info@stardaytavern.com</h1></a>
+            <a href="mailto:info@slingshotloungepdx.com"><h1>info@slingshotloungepdx.com</h1></a>
           </Col>
         </Row>
       </Container>

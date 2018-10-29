@@ -1,13 +1,13 @@
 .Contact {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #FCD819;
+  background-color: inherit;
+  color: inherit;
   overflow: auto;
   height: 100%;
-  font-family: 'Oswald';
+  font-family: 'Open Sans';
 }
 
 .Contact a {
-  color: #FCD819;
+  color: inherit;
 }
 
 .Contact a:hover {
