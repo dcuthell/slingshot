@@ -3,7 +3,7 @@ import Router from './components/Router';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import './App.css';
-import Logo from './img/logo.png';
+import Logo from './img/logo.jpg';
 
 
 class App extends Component {

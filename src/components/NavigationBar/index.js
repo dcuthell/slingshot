@@ -49,13 +49,13 @@ class NavigationBar extends Component {
           </Nav>
           <Nav className="social-icons">
 						<NavItem>
-							<NavLink href="https://www.facebook.com/TheStardayTavern/" target="_blank" rel="noopener noreferrer"><span className="footer-icon icon fa fa-facebook-square desktop-only"></span></NavLink>
-						</NavItem>
-            <NavItem>
-							<NavLink href="https://twitter.com/stardaytavern?lang=en" target="_blank" rel="noopener noreferrer"><span className="footer-icon icon fa fa-twitter desktop-only"></span></NavLink>
+							<NavLink href="https://www.facebook.com/slingshotlounge/" target="_blank" rel="noopener noreferrer"><span className="footer-icon icon fa fa-facebook-square desktop-only"></span></NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href="https://www.yelp.com/biz/starday-tavern-portland" target="_blank" rel="noreferrer noopener"><span className="footer-icon icon fa fa-yelp desktop-only"></span></NavLink>
+							<NavLink href="https://www.yelp.com/biz/the-slingshot-lounge-portland" target="_blank" rel="noreferrer noopener"><span className="footer-icon icon fa fa-yelp desktop-only"></span></NavLink>
+						</NavItem>
+            <NavItem>
+							<NavLink href="https://www.tripadvisor.com/Attraction_Review-g52024-d6198137-Reviews-Slingshot_Lounge-Portland_Oregon.html" target="_blank" rel="noopener noreferrer"><span className="footer-icon icon fa fa-tripadvisor desktop-only"></span></NavLink>
 						</NavItem>
           </Nav>
         </Collapse>
