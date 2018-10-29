@@ -10,9 +10,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavigationBar background="black" text="#FCD819" logo={Logo}/>
+        <NavigationBar background="grey" text="black" logo={Logo}/>
         <Router/>
-        <Footer background="black" text="white"/>
+        <Footer background="grey" text="black"/>
       </div>
     );
   }
