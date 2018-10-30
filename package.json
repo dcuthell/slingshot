@@ -9,6 +9,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
+    "react-with-important-style": "^0.2.2",
     "reactstrap": "^6.5.0",
     "rgba-convert": "^0.3.0"
   },
