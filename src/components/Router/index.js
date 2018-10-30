@@ -16,7 +16,7 @@ class Router extends Component {
       <div className="Router" style={{color: this.props.text, backgroundColor: background}}>
         <style>
           {`
-            a:hover {
+            .Router a:hover {
               border-bottom: 1px ` + this.props.hovercolor + ` solid;
               color: ` + this.props.hovercolor + `!important;
             }
@@ -37,7 +37,7 @@ class Router extends Component {
 Router.defaultProps = {
   text: "white",
   background: "black",
-  hovercolor: "black"
+  hovercolor: "grey"
 }
 
 export default Router;

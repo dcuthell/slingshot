@@ -8,7 +8,7 @@ class Footer extends Component {
         style={{backgroundColor: this.props.background, color: this.props.text}}>
         <style>
           {`
-            a:hover {
+            .Footer a:hover {
               border-bottom: 1px ` + this.props.hovercolor + ` solid;
               color: ` + this.props.hovercolor + `!important;
             }
@@ -27,7 +27,8 @@ class Footer extends Component {
 
 Footer.defaultProps = {
   background: 'black',
-  text: 'white'
+  text: 'white',
+  hovercolor: 'grey'
 }
 
 export default Footer;
