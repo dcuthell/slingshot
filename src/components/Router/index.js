@@ -13,7 +13,7 @@ class Router extends Component {
     const colorarray = rgba(this.props.background);
     const background = "rgba(" + colorarray[0] + ", " + colorarray[1] + ", " + + colorarray[2] + ", 0.8)"
     return (
-      <div className="Router" style={{color: this.props.text, backgroundColor: background}}>
+      <div className="Router" style={{color: this.props.text, backgroundColor: background, backgroundImage: "url(" + this.props.backgroundImage + ")"}}>
         <style>
           {`
             .Router a:hover {

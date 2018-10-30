@@ -17,10 +17,6 @@ class Home extends Component {
         </Row>
         <Row>
           <Col>
-            <h4>Upcoming Events</h4>
-            <FBEmbedFrame data="events" account="slingshotlounge"/>
-          </Col>
-          <Col>
             <h4>Recent Posts</h4>
             <FBEmbedFrame data="timeline" account="slingshotlounge"/>
           </Col>

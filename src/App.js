@@ -4,15 +4,16 @@ import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import './App.css';
 import Logo from './img/logo.png';
+import Background from './img/fbcover.jpg'
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavigationBar background="grey" text="black" hovercolor="white" logo={Logo}/>
-        <Router background="grey" text="black" hovercolor="white"/>
-        <Footer background="grey" text="black" hovercolor="green"/>
+        <NavigationBar background="black" text="#6180B7" hovercolor="#F8EBBE" logo={Logo}/>
+        <Router background="#FAF3C7" text="black" hovercolor="#6180B7" backgroundImage={Background}/>
+        <Footer background="black" text="#6180B7" hovercolor="#F8EBBE"/>
       </div>
     );
   }
