@@ -29,9 +29,6 @@ class NavigationBar extends Component {
   render() {
     const colorarray = rgba(this.props.text);
     const rgbastring = '' + colorarray[0] + ', ' + colorarray[1] + ', ' + colorarray[2] + ', 0.5 ';
-    const url = "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, .5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E";
-    const togglestyle = "url(" + url + ")";
-    console.log(rgbastring);
     return (
       <Navbar expand="md"
         className={this.props.className}
@@ -44,6 +41,11 @@ class NavigationBar extends Component {
             #toggleIcon {
               background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(` + rgbastring + `)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
               }
+
+            .nav-link:hover {
+            	border-bottom: 1px ` + this.props.hovercolor + ` solid;
+            	color: ` + this.props.hovercolor + `!important;
+            }
           `}
         </style>
         <NavbarToggler onClick={this.toggle}>
@@ -84,6 +86,7 @@ NavigationBar.defaultProps = {
   className: "sticky-top navbar-dark NavigationBar",
   text: 'white',
   background: 'black',
+  hovercolor: 'grey',
   logo: 'none'
 }
 
