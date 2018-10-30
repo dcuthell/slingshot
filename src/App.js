@@ -11,8 +11,8 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar background="grey" text="black" hovercolor="white" logo={Logo}/>
-        <Router background="grey" text="black"/>
-        <Footer background="grey" text="black"/>
+        <Router background="grey" text="black" hovercolor="white"/>
+        <Footer background="grey" text="black" hovercolor="white"/>
       </div>
     );
   }

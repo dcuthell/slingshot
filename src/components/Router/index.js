@@ -14,6 +14,14 @@ class Router extends Component {
     const background = "rgba(" + colorarray[0] + ", " + colorarray[1] + ", " + + colorarray[2] + ", 0.8)"
     return (
       <div className="Router" style={{color: this.props.text, backgroundColor: background}}>
+        <style>
+          {`
+            a:hover {
+              border-bottom: 1px ` + this.props.hovercolor + ` solid;
+              color: ` + this.props.hovercolor + `!important;
+            }
+          `}
+        </style>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/menu" component={Menu}/>
@@ -28,7 +36,8 @@ class Router extends Component {
 
 Router.defaultProps = {
   text: "white",
-  background: "black"
+  background: "black",
+  hovercolor: "black"
 }
 
 export default Router;

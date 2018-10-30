@@ -6,6 +6,14 @@ class Footer extends Component {
     return(
       <div className="Footer"
         style={{backgroundColor: this.props.background, color: this.props.text}}>
+        <style>
+          {`
+            a:hover {
+              border-bottom: 1px ` + this.props.hovercolor + ` solid;
+              color: ` + this.props.hovercolor + `!important;
+            }
+          `}
+        </style>
         <p>
           Site and design © 2018 Grailsoft Technical Solutions
           <a href='https://www.linkedin.com/company/grailsoft-technologies-llc/' target="_blank" rel="noreferrer noopener"><span className="footer-icon icon fa fa-linkedin-square"></span></a>

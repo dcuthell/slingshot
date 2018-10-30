@@ -7,7 +7,7 @@ class GoogleMapFrame extends Component {
     super(props);
     this.state = {
       height: (parseInt(window.innerHeight * .65, 10)) + "px", // 10 is for radix
-      width: "100%"
+      width: "80%"
     }
   }
   render() {
