@@ -37,7 +37,8 @@ class Router extends Component {
 Router.defaultProps = {
   text: "white",
   background: "black",
-  hovercolor: "grey"
+  hovercolor: "grey",
+  backgroundImage: '../../img/background.jpg'
 }
 
 export default Router;

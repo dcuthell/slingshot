@@ -8,6 +8,7 @@
     "font-awesome": "^4.7.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-instagram-embed": "git+https://github.com/JokinenK/react-instagram-embed#release/1.4.0_json",
     "react-scripts": "1.1.1",
     "react-with-important-style": "^0.2.2",
     "reactstrap": "^6.5.0",

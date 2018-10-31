@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'reactstrap';
+import InstagramFrame from '../InstagramFrame';
 import './styles.css';
 
 class About extends Component {
@@ -24,6 +25,11 @@ render() {
       <Row>
         <Col>
           <h4>Header 4</h4>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <InstagramFrame />
         </Col>
       </Row>
     </Container>
