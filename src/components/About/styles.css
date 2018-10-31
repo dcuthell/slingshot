@@ -2,6 +2,10 @@
   background-color: inherit;
   color: inherit;
   height: 100%;
-  overflow: auto;
+  overflow: scroll;
   font-family: 'Yesteryear';
+}
+
+.About iframe {
+  margin-left: 100px;
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InstagramEmbed from 'react-instagram-embed';
-import { Row, Col } from 'reactstrap';
+import { Col } from 'reactstrap';
 import './styles.css';
 
 import API from '../../api.js'
@@ -11,9 +11,9 @@ class InstagramFrame extends Component {
 
 		this.state = {
 			urls : [],
-			width: (parseInt(window.innerWidth * .8, 10)) + "px"
+			width: "1200px"
 		}
-
+		console.log("Width: " + this.state.width)
 	}
 
 	mapContentToState(){
@@ -52,7 +52,7 @@ class InstagramFrame extends Component {
 					<InstagramEmbed
 						url={this.state.urls[index]}
 						maxWidth={this.state.width}
-						hideCaption={false}
+						hideCaption={true}
 						containerTagName='div'
 						protocol=''
 						injectScript

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import { Container } from 'reactstrap';
 import rgba from 'rgba-convert';
 import Home from '../Home';
 import Menu from '../Menu';
@@ -13,7 +14,7 @@ class Router extends Component {
     const colorarray = rgba(this.props.background);
     const background = "rgba(" + colorarray[0] + ", " + colorarray[1] + ", " + + colorarray[2] + ", 0.8)"
     return (
-      <div className="Router" style={{color: this.props.text, backgroundColor: background, backgroundImage: "url(" + this.props.backgroundImage + ")"}}>
+      <Container className="Router" style={{color: this.props.text, backgroundColor: background, backgroundImage: "url(" + this.props.backgroundImage + ")"}}>
         <style>
           {`
             .Router a:hover {
@@ -29,7 +30,7 @@ class Router extends Component {
           <Route path="/contact" component={Contact}/>
           <Route component={NotFound} />
         </Switch>
-      </div>
+      </Container>
     );
   }
 }
