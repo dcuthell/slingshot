@@ -28,9 +28,7 @@ render() {
         </Col>
       </Row>
       <Row>
-        <Col>
-          <InstagramFrame />
-        </Col>
+        <InstagramFrame />
       </Row>
     </Container>
     );

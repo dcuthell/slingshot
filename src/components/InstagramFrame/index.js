@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import InstagramEmbed from 'react-instagram-embed';
 import { Row, Col } from 'reactstrap';
+import './styles.css';
 
 import API from '../../api.js'
 
@@ -9,7 +10,8 @@ class InstagramFrame extends Component {
 		super(props);
 
 		this.state = {
-			urls : ["https://instagr.am/p/Bl4m0xInwQl/"],
+			urls : [],
+			width: (parseInt(window.innerWidth * .8, 10)) + "px"
 		}
 
 	}
@@ -20,7 +22,6 @@ class InstagramFrame extends Component {
     .then(res => res.json())
     .then(
       (result) => {
-				console.log(result);
 				let myMap = result.data;
 				myMap.forEach( (data) => {
 					this.setState({
@@ -45,39 +46,31 @@ class InstagramFrame extends Component {
 
 	render() {
 		let list = null;
-		console.log(this.state.urls);
 		if (this.state.urls[0]){
 			list = this.state.urls.map((url, index) =>
-				<Row key={index}>
-					<Col>
-						<InstagramEmbed
-							url={this.state.urls[index]}
-							maxWidth={this.props.width}
-							hideCaption={false}
-							containerTagName='div'
-							protocol=''
-							injectScript
-							onLoading={() => {}}
-							onSuccess={() => {}}
-							onAfterRender={() => {}}
-							onFailure={() => {}}
-						/>
-					</Col>
-				</Row>
+				<Col key={index}>
+					<InstagramEmbed
+						url={this.state.urls[index]}
+						maxWidth={this.state.width}
+						hideCaption={false}
+						containerTagName='div'
+						protocol=''
+						injectScript
+						onLoading={() => {}}
+						onSuccess={() => {}}
+						onAfterRender={() => {}}
+						onFailure={() => {}}
+					/>
+				</Col>
 			);
 			return list;
 		}else{
 
 			return(
-				<p>poop</p>
+				<p>Instagram fetch error</p>
 			);
 		}
   }
-}
-
-InstagramFrame.defaultProps = {
-	url: "PLXeXlqUgjSWNAZFPJB6rf7uOBUtvEjfJD",
-	width: 340,
 }
 
 export default InstagramFrame;
