@@ -13,7 +13,7 @@ class Home extends Component {
         <Row>
           <Col>
             <h1>Welcome to the Slingshot Lounge</h1>
-            <h3>Good drinks, good people, good times</h3>
+            <h3>Happy Hour 3-7pm Mon-Fri</h3>
           </Col>
         </Row>
         <Row>
@@ -21,7 +21,7 @@ class Home extends Component {
             <h4>Instagram Activity</h4>
           </Col>
         </Row>
-        // <InstagramFrame />
+        <InstagramFrame />
         <Row>
           <Col>
             <h4>Recent Facebook Posts</h4>
