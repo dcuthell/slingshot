@@ -13,7 +13,6 @@ class InstagramFrame extends Component {
 			urls : [],
 			width: "1200px"
 		}
-		console.log("Width: " + this.state.width)
 	}
 
 	mapContentToState(){
@@ -64,7 +63,7 @@ class InstagramFrame extends Component {
 				</Col>
 			);
 			return (
-				<Row>
+				<Row className="ig-row">
 					{list}
 				</Row>
 			);

@@ -5,6 +5,10 @@
   overflow: auto;
 }
 
-.Menu h1{
-  font-family: 'Damion';
+.Menu h1, h2, h3, h4{
+  font-family: 'Sonora';
+}
+
+.Menu p{
+  font-family: 'Raleway';
 }

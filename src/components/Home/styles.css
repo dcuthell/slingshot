@@ -6,11 +6,25 @@
 }
 
 .Home h1 {
-  font-family: 'Yesteryear';
+  font-family: 'Sonora';
 }
 .Home h3 {
   font-family: 'Raleway';
 }
 .Home h4 {
   font-family: 'Roboto';
+}
+
+.Home .row {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@media (max-width: 576px) {
+
+  .Home .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
 }

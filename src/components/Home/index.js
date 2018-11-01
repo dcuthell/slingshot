@@ -21,11 +21,15 @@ class Home extends Component {
             <h4>Instagram Activity</h4>
           </Col>
         </Row>
-        <InstagramFrame />
+        // <InstagramFrame />
         <Row>
           <Col>
             <h4>Recent Facebook Posts</h4>
             <FBEmbedFrame data="timeline" account="slingshotlounge"/>
+          </Col>
+          <Col>
+            <h4>Events</h4>
+            <FBEmbedFrame data="events" account="slingshotlounge"/>
           </Col>
         </Row>
       </Container>

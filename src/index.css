@@ -1,5 +1,13 @@
 body, html {
   height: 100%;
+  
 }
 
 @import url('https://fonts.googleapis.com/css?family=Yesteryear|Open+Sans|Roboto|Raleway|Abril+Fatface');
+
+@font-face {
+    font-family: 'Sonora';
+    src: url('font/SonoraProOT-LightItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

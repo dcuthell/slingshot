@@ -13,3 +13,15 @@
 		height: 0px;  /* remove scrollbar space */
     background: transparent;  /* make scrollbar invisible */
 }
+
+.Router h1{
+	font-size: 4.5rem;
+}
+
+.Router h2{
+	font-size: 3.5rem;
+}
+
+.Router h3{
+	font-size: 2.5rem;
+}
