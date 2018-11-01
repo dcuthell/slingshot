@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'reactstrap';
 import './styles.css';
 
 import FBEmbedFrame from '../FBEmbedFrame';
+import InstagramFrame from '../InstagramFrame';
 
 
 class Home extends Component {
@@ -17,7 +18,13 @@ class Home extends Component {
         </Row>
         <Row>
           <Col>
-            <h4>Recent Posts</h4>
+            <h4>Instagram Activity</h4>
+          </Col>
+        </Row>
+        <InstagramFrame />
+        <Row>
+          <Col>
+            <h4>Recent Facebook Posts</h4>
             <FBEmbedFrame data="timeline" account="slingshotlounge"/>
           </Col>
         </Row>

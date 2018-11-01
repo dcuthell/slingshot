@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import InstagramEmbed from 'react-instagram-embed';
-import { Col } from 'reactstrap';
+import { Col, Row } from 'reactstrap';
 import './styles.css';
 
 import API from '../../api.js'
@@ -63,7 +63,11 @@ class InstagramFrame extends Component {
 					/>
 				</Col>
 			);
-			return list;
+			return (
+				<Row>
+					{list}
+				</Row>
+			);
 		}else{
 
 			return(
