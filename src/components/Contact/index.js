@@ -10,12 +10,12 @@ class Contact extends Component {
       <Container className="Contact">
         <Row>
           <Col>
-            <h1>Call</h1>
-            <a href="tel:+15034456649"><h1>(503)-445-6649</h1></a>
+            <h3>Call</h3>
+            <a href="tel:+15034456649"><h3>(503)-445-6649</h3></a>
           </Col>
           <Col>
-            <h1>5532 SE Center St</h1>
-            <h1>Portland, OR</h1>
+            <h3>5532 SE Center St</h3>
+            <h3>Portland, OR</h3>
           </Col>
         </Row>
         <Row>

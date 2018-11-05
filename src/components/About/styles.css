@@ -3,5 +3,9 @@
   color: inherit;
   height: 100%;
   overflow: scroll;
+  font-family: 'Raleway';
+}
+
+.About h1{
   font-family: 'Sonora';
 }

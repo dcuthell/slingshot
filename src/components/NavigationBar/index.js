@@ -11,7 +11,6 @@ class NavigationBar extends Component {
     this.state = {
         isOpen: false,
         expand: "md",
-
     };
   }
   toggle() {
@@ -51,7 +50,6 @@ class NavigationBar extends Component {
         <NavbarToggler onClick={this.toggle}>
           <span className="navbar-toggler-icon" id="toggleIcon"/>
         </NavbarToggler>
-
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto nav-options" navbar>
             <NavItem>
