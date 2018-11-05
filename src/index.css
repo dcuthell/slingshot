@@ -1,4 +1,5 @@
 body, html {
+  font-size: 12px;
   height: 100%;
 }
 
@@ -9,4 +10,16 @@ body, html {
     src: url('font/SonoraProOT-LightItalic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+
+@media (min-width: 576px) {
+  body, html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body, html {
+    font-size: 20px;
+  }
 }
