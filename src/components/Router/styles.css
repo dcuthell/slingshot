@@ -14,6 +14,8 @@
     background: transparent;  /* make scrollbar invisible */
 }
 
+/* Custom header sizes */
+
 .Router h1{
 	font-size: 4rem;
 }
@@ -28,4 +30,13 @@
 
 .Router h4{
 	font-size: 1.5rem;
+}
+
+/*Standard container styling */
+
+.Router .container{
+	background-color: inherit;
+  color: inherit;
+  height: 100%;
+  overflow: auto;
 }

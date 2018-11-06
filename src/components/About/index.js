@@ -18,6 +18,16 @@ render() {
           <h4>Thank you for your support</h4>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <iframe id="instagram-embed-69" src="https://www.instagram.com/p/BpnZ1QDFNkt/embed/" allowtransparency="true" frameborder="0" height="818" scrolling="no" ></iframe>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+
+        </Col>
+      </Row>
     </Container>
     );
   }
