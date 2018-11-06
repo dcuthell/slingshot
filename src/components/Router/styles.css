@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+	font-family: "Raleway";
 }
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
@@ -47,6 +48,7 @@
 
 .Router h1{
 	font-size: 4rem;
+	font-family: 'Sonora'
 }
 
 .Router h2{
