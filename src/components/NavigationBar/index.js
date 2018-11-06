@@ -6,25 +6,26 @@ import './styles.css';
 class NavigationBar extends Component {
   constructor(props) {
     super(props);
-    this.toggle = this.toggle.bind(this);
-  	this.toggle2 = this.toggle2.bind(this);
+    this.toggleNav = this.toggleNav.bind(this);
+  	this.closeNav = this.closeNav.bind(this);
     this.state = {
         isOpen: false,
         expand: "md",
     };
   }
-  toggle() {
+
+  toggleNav() {
     this.setState({
       isOpen: !this.state.isOpen
     });
   }
-	toggle2() {
-		if (this.state.isOpen) {
-			this.setState({
-	      isOpen: false
-	    });
-		}
+
+  closeNav() {
+    this.setState({
+      isOpen: false
+    });
   }
+
   render() {
     const colorarray = rgba(this.props.text);
     const rgbastring = '' + colorarray[0] + ', ' + colorarray[1] + ', ' + colorarray[2] + ', 0.5 ';
@@ -32,7 +33,7 @@ class NavigationBar extends Component {
       <Navbar expand="md"
         className={this.props.className}
         style={{backgroundColor: this.props.background, color: this.props.text}}>
-        <NavbarBrand href="#/" onClick={this.toggle2}>
+        <NavbarBrand href="#/" onClick={this.closeNav}>
           <img id="logo" src={this.props.logo} alt="Business Logo"></img>
         </NavbarBrand>
         <style>
@@ -47,23 +48,23 @@ class NavigationBar extends Component {
             }
           `}
         </style>
-        <NavbarToggler onClick={this.toggle}>
+        <NavbarToggler onClick={this.toggleNav}>
           <span className="navbar-toggler-icon" id="toggleIcon"/>
         </NavbarToggler>
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto nav-options" navbar>
             <NavItem>
-							<NavLink href={"#/menu"} onClick={this.toggle2}>Menu
+							<NavLink href={"#/menu"} onClick={this.closeNav}>Menu
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href={"#/about"} onClick={this.toggle2}>About</NavLink>
+							<NavLink href={"#/about"} onClick={this.closeNav}>About</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href={"#/contact"} onClick={this.toggle2}>Contact</NavLink>
+							<NavLink href={"#/contact"} onClick={this.closeNav}>Contact</NavLink>
 						</NavItem>
           </Nav>
-          <Nav className="social-icons">
+          <Nav className="justify-content-center">
 						<NavItem>
 							<NavLink href="https://www.facebook.com/slingshotlounge/" target="_blank" rel="noopener noreferrer"><span className="footer-icon icon fa fa-facebook-square desktop-only"></span></NavLink>
 						</NavItem>

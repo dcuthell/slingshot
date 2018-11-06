@@ -1,19 +1,16 @@
+/* Standard Navigation Bar Styling */
 .NavigationBar {
 	height: 100%;
 	font-family: 'Sonora';
 	font-size: 3vh;
 }
 
-.social-icons {
-	justify-content: center;
-}
-
 #logo {
 	height: 10vh;
 	width: 10vh;
 	margin-top: 1vh;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 2vw;
+  margin-left: 2vw;
   margin-bottom: 1vh;
 }
 
