@@ -1,12 +1,3 @@
 .Contact {
   font-family: 'Raleway';
 }
-
-.Contact a {
-  color: inherit;
-}
-
-.Contact a:hover {
-  text-decoration: none;
-	color: white;
-}
