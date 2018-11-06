@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Container, Col, Row } from 'reactstrap';
+
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-class NotFound extends Component {
-  render() {
-    return (
-      <div className="page-container">
-        <div className="lineStyle1 title">404</div>
-        <div className="lineStyle2">404 Page here</div>
-        <center><Link to="/">Return to Home Page</Link></center>
-      </div>
-    );
-  }
-}
-
-export default NotFound;
+export default function NotFound (props) {
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <h1>404 Not Found</h1>
+          <a href={"/"}><h2>Return to Home</h2></a>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
