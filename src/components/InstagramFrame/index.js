@@ -22,6 +22,7 @@ class InstagramFrame extends Component {
     .then(
       (result) => {
 				let myMap = result.data;
+				console.log(result);
 				myMap.forEach( (data) => {
 					this.setState({
 						urls: [
