@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Router from './components/Router';
+import ParallaxPage from './components/ParallaxPage';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
 import './App.css';
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <NavigationBar background="black" text="#6180B7" hovercolor="#F8EBBE" logo={Logo}/>
-        <Router background="#FAF3C7" text="black" hovercolor="#6180B7" backgroundImage={Background}/>
+        <ParallaxPage background="#FAF3C7" text="black" hovercolor="#6180B7" backgroundImage={Background}/>
         <Footer background="black" text="#6180B7" hovercolor="#F8EBBE"/>
       </div>
     );
