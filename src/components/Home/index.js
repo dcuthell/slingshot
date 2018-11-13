@@ -1,8 +1,6 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 
-import FBEmbedFrame from '../FBEmbedFrame';
-import InstagramFrame from '../InstagramFrame';
 import IGFrame from '../IGFrame';
 
 export default function Home (props) {
@@ -19,20 +17,18 @@ export default function Home (props) {
           <h4>Instagram Activity</h4>
         </Col>
       </Row>
-      <InstagramFrame />
       <Row>
-        <Col>
-          <IGFrame/>
+        <Col lg="6">
+          <IGFrame source="Bp3KFvyg63z"/>
         </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h4>Recent Facebook Posts</h4>
-          <FBEmbedFrame data="timeline" account="slingshotlounge"/>
+        <Col lg="6">
+          <IGFrame source="BaKs7RhnSse"/>
         </Col>
-        <Col>
-          <h4>Events</h4>
-          <FBEmbedFrame data="events" account="slingshotlounge"/>
+        <Col lg="6">
+          <IGFrame source="BoSqbVChiY1"/>
+        </Col>
+        <Col lg="6">
+          <IGFrame source="BU4-WH9lV7K"/>
         </Col>
       </Row>
     </Container>
