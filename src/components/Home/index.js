@@ -3,6 +3,7 @@ import { Container, Col, Row } from 'reactstrap';
 
 import FBEmbedFrame from '../FBEmbedFrame';
 import InstagramFrame from '../InstagramFrame';
+import IGFrame from '../IGFrame';
 
 export default function Home (props) {
   return (
@@ -19,6 +20,11 @@ export default function Home (props) {
         </Col>
       </Row>
       <InstagramFrame />
+      <Row>
+        <Col>
+          <IGFrame/>
+        </Col>
+      </Row>
       <Row>
         <Col>
           <h4>Recent Facebook Posts</h4>
