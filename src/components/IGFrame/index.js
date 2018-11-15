@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 
+
 class IGFrame extends Component {
 
   constructor(props){
     super(props);
     this.state = {
       width: ((window.innerWidth > 576) ? 400 : parseInt(window.innerWidth*.75, 10)),
-      height: ((window.innerHeight > 576) ? 600  : (parseInt(window.innerHeight * .65, 10))), // 10 is for radix
+      height: ((parseInt(window.innerHeight * .80, 10))), // 10 is for radix
       mobile: (((window.innerWidth > 576) && (window.innerHeight > 576)) ? false : true)
     }
   }
