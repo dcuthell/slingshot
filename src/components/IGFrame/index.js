@@ -15,7 +15,7 @@ class IGFrame extends Component {
   render() {
     return(
       <iframe
-        src={"http://instagram.com/p/" + this.props.source + "/embed/captioned"}
+        src={"https://instagram.com/p/" + this.props.source + "/embed/captioned"}
         title="ig-frame"
         width={this.state.width}
         height={this.state.height}
