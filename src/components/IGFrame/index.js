@@ -7,7 +7,7 @@ class IGFrame extends Component {
     super(props);
     this.state = {
       width: ((window.innerWidth > 576) ? 400 : parseInt(window.innerWidth*.75, 10)),
-      height: ((parseInt(window.innerHeight * .80, 10))), // 10 is for radix
+      height: (parseInt(window.innerHeight * .80, 10)), // 10 is for radix
       mobile: (((window.innerWidth > 576) && (window.innerHeight > 576)) ? false : true)
     }
   }
@@ -15,7 +15,7 @@ class IGFrame extends Component {
   render() {
     return(
       <iframe
-        src={"http://instagram.com/p/" + this.props.source + "/embed"}
+        src={"http://instagram.com/p/" + this.props.source + "/embed/captioned"}
         title="ig-frame"
         width={this.state.width}
         height={this.state.height}

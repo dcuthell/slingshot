@@ -19,16 +19,16 @@ export default function Home (props) {
       </Row>
       <Row>
         <Col xl="6">
-          <IGFrame source="Bp3KFvyg63z"/>
-        </Col>
-        <Col xl="6">
-          <IGFrame source="BaKs7RhnSse"/>
-        </Col>
-        <Col xl="6">
           <IGFrame source="BoSqbVChiY1"/>
         </Col>
         <Col xl="6">
-          <IGFrame source="BU4-WH9lV7K"/>
+          <IGFrame source="BmkgTGFhCeH"/>
+        </Col>
+        <Col xl="6">
+          <IGFrame source="BjlQeKLhSgr"/>
+        </Col>
+        <Col xl="6">
+          <IGFrame source="BgWzTkFhxTw"/>
         </Col>
       </Row>
     </Container>
