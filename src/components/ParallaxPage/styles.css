@@ -71,7 +71,7 @@
 	position: relative;
 	background-attachment: fixed;
   background-position: center;
-	height: 80vh;
+	height: 40vh;
 	background-size: cover;
 	background-repeat: no-repeat;
   justify-content: center;
@@ -81,6 +81,7 @@
 .bgimg1 {
 	background-image: url('../../img/pool.jpg');
 	background-color: rgb(48, 48, 48);
+	height: 80vh;
 }
 
 .bgimg2 {
