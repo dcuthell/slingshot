@@ -33,7 +33,7 @@ class NavigationBar extends Component {
       <Navbar expand="md"
         className={this.props.className}
         style={{backgroundColor: this.props.background, color: this.props.text}}>
-        <NavbarBrand href="#/" onClick={this.closeNav}>
+        <NavbarBrand href="#Home" onClick={this.closeNav}>
           <img id="logo" src={this.props.logo} alt="Business Logo"></img>
         </NavbarBrand>
         <style>
@@ -54,14 +54,14 @@ class NavigationBar extends Component {
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="mr-auto nav-options" navbar>
             <NavItem>
-							<NavLink href={"#/menu"} onClick={this.closeNav}>Menu
+							<NavLink href={"#Menu"} onClick={this.closeNav}>Menu
 							</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href={"#/about"} onClick={this.closeNav}>About</NavLink>
+							<NavLink href={"#About"} onClick={this.closeNav}>About</NavLink>
 						</NavItem>
 						<NavItem>
-							<NavLink href={"#/contact"} onClick={this.closeNav}>Contact</NavLink>
+							<NavLink href={"#Contact"} onClick={this.closeNav}>Contact</NavLink>
 						</NavItem>
           </Nav>
           <Nav className="justify-content-center">
